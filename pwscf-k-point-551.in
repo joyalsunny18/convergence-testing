@@ -1,0 +1,52 @@
+&CONTROL
+  calculation = 'scf'
+  etot_conv_thr =   1.2000000000d-04
+  forc_conv_thr =   1.0000000000d-04
+  outdir = './out/'
+  prefix = 'MoS2'
+  pseudo_dir = './pseudo/'
+  tprnfor = .true.
+  tstress = .true.
+  verbosity = 'high'
+/
+&SYSTEM
+  degauss =   1.4699723600d-02
+  ecutrho = 325
+  ecutwfc =   65
+  ibrav = 0
+  nat = 12
+  nosym = .false.
+  nspin = 2
+  ntyp = 2
+  occupations = 'smearing'
+  smearing = 'cold'
+  starting_magnetization(1) =   3.5714285714d-01
+  starting_magnetization(2) =   1.0000000000d-01
+/
+&ELECTRONS
+  conv_thr =   2.4000000000d-09
+  electron_maxstep = 80
+  mixing_beta =   4.0000000000d-01
+/
+ATOMIC_SPECIES
+Mo     95.96 Mo.pbe-spn-kjpaw_psl.1.0.0.UPF
+S      32.065 S.pbe-n-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS crystal
+Mo           0.1666650012       0.3333350007       0.4215074652 
+S            0.3333350000       0.1666699999       0.3830461232 
+S            0.3333350012       0.1666650008       0.4599688073 
+Mo           0.1666650010       0.8333350005       0.4215074652 
+S            0.3333349998       0.6666699997       0.3830461232 
+S            0.3333350011       0.6666650006       0.4599688073 
+Mo           0.6666650012       0.3333350007       0.4215074652 
+S            0.8333350000       0.1666699999       0.3830461232 
+S            0.8333350012       0.1666650008       0.4599688073 
+Mo           0.6666650010       0.8333350005       0.4215074652 
+S            0.8333349998       0.6666699997       0.3830461232 
+S            0.8333350011       0.6666650006       0.4599688073 
+K_POINTS automatic
+5 5 1 0 0 0
+CELL_PARAMETERS angstrom
+      6.3220000000       0.0000000000       0.0000000000
+     -3.1610000000       5.4750126027       0.0000000000
+      0.0000000000      -0.0000000000      39.1597750000
