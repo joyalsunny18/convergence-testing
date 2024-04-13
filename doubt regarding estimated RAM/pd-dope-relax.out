@@ -1,0 +1,387 @@
+
+     Program PWSCF v.6.7MaX starts on 13Apr2024 at 10: 1: 2 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     4 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       4
+     Reading input from pd-dope-relax.in
+Warning: card &CELL ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+     file Mo.pbe-spn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  4S 4D renormalized
+     file S.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  3S 3P renormalized
+     file Pd.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  5S 4D renormalized
+
+     -------------------------------------------------
+     Parameters for Dispersion (Grimme-D2) Correction:
+     -------------------------------------------------
+       atom      VdW radius       C_6     
+
+        Mo         3.097        855.833
+        S          3.180        193.230
+        Pd         3.097        855.833
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     one sub-group per band group will be used
+     scalapack distributed-memory algorithm (size of sub-group:  2*  2 procs)
+
+     Message from routine find_sym:
+     Not a group! Trying with lower acceptance parameter...
+     Message from routine find_sym:
+     Symmetry operations form a group
+     Message from routine setup:
+     using ibrav=0 with symmetry is DISCOURAGED, use correct ibrav instead
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        1356    1356    354               329416   329416   44590
+     Max        1357    1357    355               329423   329423   44611
+     Sum        5425    5425   1417              1317677  1317677  178387
+
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      18.0956  a.u.
+     unit-cell volume          =   20985.2853 (a.u.)^3
+     number of atoms/cell      =           27
+     number of atomic types    =            3
+     number of electrons       =       230.00
+     number of Kohn-Sham states=          138
+     kinetic-energy cutoff     =      60.0000  Ry
+     charge density cutoff     =     240.0000  Ry
+     scf convergence threshold =      5.4E-09
+     mixing beta               =       0.4000
+     number of iterations used =            8  plain     mixing
+     energy convergence thresh.=      2.7E-04
+     force convergence thresh. =      1.0E-04
+     Exchange-correlation= SLA  PW   PBX  PBC
+                           (   1   4   3   4   0   0   0)
+     nstep                     =           50
+
+
+     celldm(1)=  18.095584  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000  -0.000000   4.089465 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350  0.000000 )  
+               b(2) = ( -0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.244531 )  
+
+
+     PseudoPot. # 1 for Mo read from file:
+     ./pseudo/Mo.pbe-spn-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 4396e0c640fcce5c25f020efccf1ab12
+     Pseudo is Projector augmented-wave + core cor, Zval = 14.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1229 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for S  read from file:
+     ./pseudo/S.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: fb45dfebcf3e72a4e1bd4a866ec2e262
+     Pseudo is Projector augmented-wave + core cor, Zval =  6.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1151 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 3 for Pd read from file:
+     ./pseudo/Pd.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: a1ee5d3c3f0c030a735988cf39041146
+     Pseudo is Projector augmented-wave + core cor, Zval = 10.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1235 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Mo            14.00    95.96000     Mo( 1.00)
+        S              6.00    32.06500     S ( 1.00)
+        Pd            10.00   106.42000     Pd( 1.00)
+
+     Starting magnetic structure 
+     atomic species   magnetization
+        Mo           0.357
+        S            0.100
+        Pd           0.000
+
+      2 Sym. Ops. (no inversion) found
+
+
+                                    s                        frac. trans.
+
+      isym =  1     identity                                     
+
+ cryst.   s( 1) = (     1          0          0      )
+                  (     0          1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 1) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  2     inv. 180 deg rotation - cryst. axis [1,1,0]  
+
+ cryst.   s( 2) = (     0         -1          0      )
+                  (    -1          0          0      )
+                  (     0          0          1      )
+
+ cart.    s( 2) = (  0.5000000 -0.8660254  0.0000000 )
+                  ( -0.8660254 -0.5000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Mo  tau(   1) = (  -0.0000017   0.1924535   1.7237392  )
+         2           S   tau(   2) = (   0.1666677   0.0962276   1.5611179  )
+         3           S   tau(   3) = (   0.1666694   0.0962247   1.8863628  )
+         4           Mo  tau(   4) = (  -0.1666688   0.4811259   1.7237389  )
+         5           S   tau(   5) = (   0.0000000   0.3849026   1.5611162  )
+         6           S   tau(   6) = (   0.0000017   0.3848999   1.8863641  )
+         7           Mo  tau(   7) = (  -0.3333329   0.7698001   1.7237392  )
+         8           S   tau(   8) = (  -0.1666662   0.6735770   1.5611162  )
+         9           S   tau(   9) = (  -0.1666644   0.6735740   1.8863641  )
+        10           Mo  tau(  10) = (   0.3333344   0.1924526   1.7237392  )
+        11           S   tau(  11) = (   0.5000000   0.0962276   1.5611157  )
+        12           S   tau(  12) = (   0.5000017   0.0962245   1.8863649  )
+        13           Pd  tau(  13) = (   0.1666655   0.4811259   1.7237389  )
+        14           S   tau(  14) = (   0.3333339   0.3849018   1.5611157  )
+        15           S   tau(  15) = (   0.3333354   0.3848990   1.8863649  )
+        16           Mo  tau(  16) = (  -0.0000017   0.7698019   1.7237389  )
+        17           S   tau(  17) = (   0.1666662   0.6735770   1.5611162  )
+        18           S   tau(  18) = (   0.1666677   0.6735740   1.8863641  )
+        19           Mo  tau(  19) = (   0.6666622   0.1924526   1.7237392  )
+        20           S   tau(  20) = (   0.8333323   0.0962276   1.5611179  )
+        21           S   tau(  21) = (   0.8333340   0.0962247   1.8863628  )
+        22           Mo  tau(  22) = (   0.4999983   0.4811230   1.7237392  )
+        23           S   tau(  23) = (   0.6666661   0.3849018   1.5611157  )
+        24           S   tau(  24) = (   0.6666679   0.3848990   1.8863649  )
+        25           Mo  tau(  25) = (   0.3333295   0.7698001   1.7237392  )
+        26           S   tau(  26) = (   0.5000000   0.6735760   1.5611179  )
+        27           S   tau(  27) = (   0.5000017   0.6735731   1.8863628  )
+
+   Crystallographic axes
+
+     site n.     atom                  positions (cryst. coord.)
+         1           Mo  tau(   1) = (  0.1111114  0.2222262  0.4215073  )
+         2           S   tau(   2) = (  0.2222247  0.1111140  0.3817414  )
+         3           S   tau(   3) = (  0.2222247  0.1111107  0.4612738  )
+         4           Mo  tau(   4) = (  0.1111093  0.5555563  0.4215072  )
+         5           S   tau(   5) = (  0.2222236  0.4444473  0.3817410  )
+         6           S   tau(   6) = (  0.2222237  0.4444441  0.4612741  )
+         7           Mo  tau(   7) = (  0.1111114  0.8888886  0.4215073  )
+         8           S   tau(   8) = (  0.2222236  0.7777797  0.3817410  )
+         9           S   tau(   9) = (  0.2222237  0.7777763  0.4612741  )
+        10           Mo  tau(  10) = (  0.4444470  0.2222252  0.4215073  )
+        11           S   tau(  11) = (  0.5555570  0.1111140  0.3817408  )
+        12           S   tau(  12) = (  0.5555569  0.1111105  0.4612743  )
+        13           Pd  tau(  13) = (  0.4444437  0.5555563  0.4215072  )
+        14           S   tau(  14) = (  0.5555570  0.4444463  0.3817408  )
+        15           S   tau(  15) = (  0.5555569  0.4444431  0.4612743  )
+        16           Mo  tau(  16) = (  0.4444437  0.8888907  0.4215072  )
+        17           S   tau(  17) = (  0.5555560  0.7777797  0.3817410  )
+        18           S   tau(  18) = (  0.5555559  0.7777763  0.4612741  )
+        19           Mo  tau(  19) = (  0.7777748  0.2222252  0.4215073  )
+        20           S   tau(  20) = (  0.8888893  0.1111140  0.3817414  )
+        21           S   tau(  21) = (  0.8888893  0.1111107  0.4612738  )
+        22           Mo  tau(  22) = (  0.7777748  0.5555530  0.4215073  )
+        23           S   tau(  23) = (  0.8888893  0.4444463  0.3817408  )
+        24           S   tau(  24) = (  0.8888895  0.4444431  0.4612743  )
+        25           Mo  tau(  25) = (  0.7777738  0.8888886  0.4215073  )
+        26           S   tau(  26) = (  0.8888893  0.7777786  0.3817414  )
+        27           S   tau(  27) = (  0.8888893  0.7777753  0.4612738  )
+
+     number of k points=     9  Marzari-Vanderbilt smearing, width (Ry)=  0.0147
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.0400000
+        k(    2) = (   0.0000000   0.2309401   0.0000000), wk =   0.1600000
+        k(    3) = (   0.0000000   0.4618802   0.0000000), wk =   0.1600000
+        k(    4) = (   0.2000000   0.3464102   0.0000000), wk =   0.0800000
+        k(    5) = (   0.2000000   0.5773503   0.0000000), wk =   0.1600000
+        k(    6) = (   0.2000000  -0.1154701   0.0000000), wk =   0.0800000
+        k(    7) = (   0.4000000  -0.2309401   0.0000000), wk =   0.0800000
+        k(    8) = (  -0.2000000   0.3464102   0.0000000), wk =   0.1600000
+        k(    9) = (   0.4000000  -0.4618802   0.0000000), wk =   0.0800000
+
+                       cryst. coord.
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.0400000
+        k(    2) = (   0.0000000   0.2000000   0.0000000), wk =   0.1600000
+        k(    3) = (   0.0000000   0.4000000   0.0000000), wk =   0.1600000
+        k(    4) = (   0.2000000   0.2000000   0.0000000), wk =   0.0800000
+        k(    5) = (   0.2000000   0.4000000   0.0000000), wk =   0.1600000
+        k(    6) = (   0.2000000  -0.2000000   0.0000000), wk =   0.0800000
+        k(    7) = (   0.4000000  -0.4000000   0.0000000), wk =   0.0800000
+        k(    8) = (  -0.2000000   0.4000000   0.0000000), wk =   0.1600000
+        k(    9) = (   0.4000000  -0.6000000   0.0000000), wk =   0.0800000
+
+     Dense  grid:  1317677 G-vectors     FFT dimensions: (  90,  90, 375)
+
+     Dynamical RAM for                 wfc:      86.70 MB
+
+     Dynamical RAM for     wfc (w. buffer):    1647.31 MB
+
+     Dynamical RAM for           str. fact:      15.08 MB
+
+     Dynamical RAM for           local pot:       0.00 MB
+
+     Dynamical RAM for          nlocal pot:     305.34 MB
+
+     Dynamical RAM for                qrad:       3.73 MB
+
+     Dynamical RAM for          rho,v,vnew:      65.01 MB
+
+     Dynamical RAM for               rhoin:      21.67 MB
+
+     Dynamical RAM for            rho*nmix:     160.85 MB
+
+     Dynamical RAM for           G-vectors:      21.36 MB
+
+     Dynamical RAM for          h,s,v(r/c):       0.87 MB
+
+     Dynamical RAM for          <psi|beta>:       1.02 MB
+
+     Dynamical RAM for                 psi:     173.40 MB
+
+     Dynamical RAM for                hpsi:     173.40 MB
+
+     Dynamical RAM for                spsi:     173.40 MB
+
+     Dynamical RAM for      wfcinit/wfcrot:     173.84 MB
+
+     Dynamical RAM for           addusdens:    1030.45 MB
+
+     Dynamical RAM for          addusforce:    1201.49 MB
+
+     Dynamical RAM for         addusstress:    1017.88 MB
+
+     Estimated static dynamical RAM per process >       2.24 GB
+
+     Estimated max dynamical RAM per process >       3.41 GB
+
+     Estimated total dynamical RAM >      13.66 GB
+
+     Atomic positions and unit cell read from directory:
+     ./out/mos2.save/
+     Message from routine qexsd_readschema :
+     xml data file ./out/mos2.save/data-file-schema.xml not found
+     Nothing found: using input atomic positions and unit cell
+
+     Generating pointlists ...
+     new r_m :   0.1039 (alat units)  1.8807 (a.u.) for type    1
+     new r_m :   0.1039 (alat units)  1.8807 (a.u.) for type    2
+     new r_m :   0.1039 (alat units)  1.8807 (a.u.) for type    3
+     Cannot read rho : file not found
+
+     Initial potential from superposition of free atoms
+
+     starting charge  229.99179, renormalised to  230.00000
+
+     negative rho (up, down):  2.366E-02 1.151E-02
+     Message from routine qexsd_readschema :
+     xml data file ./out/mos2.save/data-file-schema.xml not found
+     Cannot read wfcs: file not found
+     Starting wfcs are  161 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+       PAW data deallocated on    3 nodes for type:  3
+
+     total cpu time spent up to now is      453.1 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    60.00 Ry     beta= 0.40
+     Davidson diagonalization with overlap
+     c_bands:  2 eigenvalues not converged
+     c_bands:  5 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     ethr =  1.00E-05,  avg # of iterations = 18.9
+
+     negative rho (up, down):  2.298E-02 1.544E-02
+
+     total cpu time spent up to now is     4228.7 secs
+
+     total energy              =   -4434.34953765 Ry
+     estimated scf accuracy    <       5.67509958 Ry
+
+     total magnetization       =     4.68 Bohr mag/cell
+     absolute magnetization    =    11.99 Bohr mag/cell
+
+     iteration #  2     ecut=    60.00 Ry     beta= 0.40
+     Davidson diagonalization with overlap
+     ethr =  2.47E-03,  avg # of iterations =  4.3
+
+     negative rho (up, down):  2.260E-02 1.608E-02
+
+     total cpu time spent up to now is     5512.6 secs
+
+     total energy              =   -4435.68980541 Ry
+     estimated scf accuracy    <      15.63770666 Ry
+
+     total magnetization       =     6.00 Bohr mag/cell
+     absolute magnetization    =     9.55 Bohr mag/cell
+
+     iteration #  3     ecut=    60.00 Ry     beta= 0.40
+     Davidson diagonalization with overlap
+     ethr =  2.47E-03,  avg # of iterations =  2.3
+
+     negative rho (up, down):  2.235E-02 1.702E-02
+
+     total cpu time spent up to now is     6644.5 secs
+
+     total energy              =   -4436.69173739 Ry
+     estimated scf accuracy    <       1.77329221 Ry
+
+     total magnetization       =     3.37 Bohr mag/cell
+     absolute magnetization    =     8.44 Bohr mag/cell
+
+     iteration #  4     ecut=    60.00 Ry     beta= 0.40
+     Davidson diagonalization with overlap
